@@ -15,7 +15,6 @@ public class Payment {
         for (Reservation reserv : reservations) {
             totalMoney += reserv.getPaymentAmount();
         }
-        System.out.println(totalMoney);
         OutputView.printPaymentStart();
         usingPoints = InputView.inputPaymentPoint();
         totalMoney -= usingPoints;
